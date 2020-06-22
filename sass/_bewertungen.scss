@@ -1,0 +1,16 @@
+.bewertungen {
+
+
+    h2 {
+        @include container-h2-styles ($white);
+    }
+
+    &_text {
+        @include container-p-styles ($white);
+
+    }
+
+    img {
+        width: 80%;
+    }
+}

@@ -1,0 +1,69 @@
+@font-face {
+    font-family: "NordicLight";
+    src: local('Nordic Narrow Pro Light'), url("../fonts/nordicnarrowpro-light-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+000-5FF;
+}
+
+@font-face {
+    font-family: "NordicExtralight";
+    src: local('Nordic Narrow Pro ExtraLight'), url("../fonts/nordicnarrowpro-exlig-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+000-5FF;
+}
+
+@font-face {
+    font-family: 'corporate_sregular';
+    src: local('Corporate S Regular'),
+        url('../fonts/corporates-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+000-5FF;
+}
+
+@mixin font($font:false, $style:false, $size:false, $line-height:false) {
+
+    @if $font==nordic {
+
+        // Nordic
+        @if $style==bold {
+            font-family: 'NordicLight', Arial, Verdana, Sans-serif;
+            font-weight: bold;
+        }
+
+        @else if $style==light {
+            font-family: 'NordicExtralight', Arial, Verdana, Sans-serif;
+            font-weight: normal;
+        }
+
+        @else {
+            font-family: 'NordicLight', Arial, Verdana, Sans-serif;
+            font-weight: normal;
+        }
+    }
+
+    @else {
+
+        // DEFAUlT FONT - Corporate S Regular
+        @if $style==bold {
+            font-family: 'corporate_sregular', Arial, Verdana, Sans-serif;
+            font-weight: bold;
+        }
+
+        @else {
+            font-family: 'corporate_sregular', Arial, Verdana, Sans-serif;
+            font-weight: normal;
+        }
+    }
+
+    @include fontsize($size, $line-height);
+
+    // Font Smoothing
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

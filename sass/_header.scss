@@ -1,0 +1,129 @@
+header {
+    font-family: inherit;
+}
+
+.header-top {
+    // display: inline-block;
+
+    .nav-link {
+        padding: 0;
+        color: $white;
+        font-size: $h3-font-size-sm;
+        text-transform: uppercase;
+        transition: color .3s;
+
+        &:hover,
+        &:focus {
+            @include link-hover($red);
+        }
+
+        @include media-breakpoint-down (xs) {
+            font-size: $h4-font-size;
+        }
+    }
+
+    .navbar {
+        padding-left: 5px;
+        padding: 0;
+
+        @include media-breakpoint-down (xs) {
+            top: -2rem;
+            padding-left: 15px;
+        }
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+        color: $white;
+
+        &:hover,
+        &:focus {
+            @include link-hover($red);
+        }
+    }
+
+    .navbar-toggler {
+        cursor: pointer;
+
+        &:hover,
+        &:focus {
+            @include link-hover($red);
+        }
+    }
+
+    &-logo {
+        float: right;
+        text-align: right;
+
+        img {
+            width: 80%;
+
+            @include media-breakpoint-down (xs) {
+                width: 10rem;
+            }
+        }
+    }
+}
+
+.header_main {
+
+    height: 25rem;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    &-text {
+        @include font-styles($h2-font-size-sm, $line-height-XL, 100);
+        display: flex;
+        float: left;
+        font-family: "NordicLight";
+
+
+        @include media-breakpoint-down (sm) {
+
+            @include mobile-font-style($h3-font-size-sm, $line-height-L)
+        }
+
+        &-link {
+            font-family: 'corporate_sregular';
+            color: $red;
+            position: relative;
+            font-size: $h3-font-size-sm;
+            // @include font($font:false, $style:false);
+
+            &:hover,
+            &:focus,
+            &:active {
+                @include link-hover($red);
+
+            }
+        }
+    }
+
+    &-img {
+        max-width: 25.7rem;
+        width: 50%;
+        position: absolute;
+        right: -1rem;
+        bottom: -6.5rem;
+
+        @include media-breakpoint-down (xs) {
+            bottom: -4rem;
+        }
+    }
+
+    .carousel-indicators .active {
+        background-color: $red;
+    }
+
+    .carousel-indicators {
+        position: absolute;
+        top: 19rem;
+        margin-left: 0;
+        display: flex;
+        justify-content: left;
+
+
+
+    }
+}

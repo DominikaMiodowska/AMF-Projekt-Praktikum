@@ -1,0 +1,82 @@
+html {
+    -webkit-font-family: 'corporate_sregular';
+    font-family: 'corporate_sregular';
+}
+
+body {
+    -webkit-font-family: 'corporate_sregular';
+    font-family: 'corporate_sregular';
+    padding: 0;
+    margin: 0;
+    font-size: $p-font-size;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.link {
+
+    &:hover,
+    &:focus {
+        @include link-hover($red);
+    }
+}
+
+// BUTTON
+.demonstration_btn {
+
+    @include btn-style(15px);
+    box-shadow: $shadow-base;
+    transition:
+        transform .3s,
+        box-shadow .3s;
+
+    @include media-breakpoint-down(sm) {
+        font-size: $h5-font-size;
+    }
+
+    &:hover,
+    &:focus {
+        transform: scale(1.02);
+        box-shadow: $shadow-dark;
+        outline: none;
+    }
+
+    &-white {
+        @include btn-color($red, $white);
+    }
+
+    &-red {
+        @include btn-color($white, $red)
+    }
+}
+
+.btn-footer {
+    @include btn-style(5px);
+    @include btn-color($white, $red);
+    transition: transform .3s;
+
+    &:hover,
+    &:focus {
+        transform: scale(1.05);
+        outline: none;
+
+    }
+}
+
+
+// ###############        SECTION       #############################
+.dark_blue {
+    @include section-style($white, $primary)
+}
+
+.red {
+    @include section-style($white, $red)
+}
+
+.light_gray {
+    @include section-style(none, $light)
+}
+
+.white {
+    @include section-style(none, $white)
+}

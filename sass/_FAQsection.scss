@@ -1,0 +1,60 @@
+.FAQ {
+
+    h2 {
+        @include container-h2-styles($secondary);
+    }
+
+
+    &_demo {
+        color: $white;
+        text-align: center;
+
+        h4 {
+            font-size: $h3-font-size-sm;
+
+            @include media-breakpoint-down(sm) {
+                font-size: $h4-font-size;
+            }
+        }
+
+        p {
+            @include font-styles($h4-font-size, $line-height, 100);
+            width: 80%;
+
+
+            @include media-breakpoint-down(sm) {
+                font-size: $h5-font-size;
+            }
+        }
+
+        .controlers {
+            position: relative;
+        }
+
+        .carousel-control-prev {
+            top: 7rem;
+            align-items: flex-start;
+            opacity: 1;
+
+            &-icon {
+                position: absolute;
+                background-image: url("./../img/next.svg");
+                transform: rotate(180deg);
+                left: -5px;
+            }
+        }
+
+        .carousel-control-next {
+            min-height: 15rem;
+            opacity: 1;
+            top: 7rem;
+            align-items: flex-start;
+
+            &-icon {
+                background-image: url("./../img/next.svg");
+                position: absolute;
+                right: -5px;
+            }
+        }
+    }
+}

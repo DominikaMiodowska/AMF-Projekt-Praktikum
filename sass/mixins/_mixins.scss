@@ -1,0 +1,68 @@
+@mixin container-h2-styles ($col) {
+    font-size: $h2-font-size;
+    color: $col;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1rem;
+
+    @include media-breakpoint-down (sm) {
+        font-size: $h3-font-size;
+    }
+}
+
+@mixin container-p-styles ($col) {
+
+    @include font-styles($h3-font-size-sm, none, 300);
+    color: $col;
+    text-align: center;
+    margin-bottom: 4rem;
+
+    @include media-breakpoint-down (sm) {
+        font-size: $h4-font-size;
+    }
+}
+
+@mixin font-styles($font-size, $line-height, $font-weight) {
+
+    font-size: $font-size;
+    line-height: $line-height;
+    font-weight: $font-weight;
+}
+
+@mixin mobile-font-style($font-size, $line-height) {
+    font-size: $font-size;
+    line-height: $line-height;
+}
+
+
+@mixin link-hover($col) {
+    text-decoration: none;
+    color: $col;
+    cursor: pointer;
+}
+
+
+@mixin list-group-item ($col, $bgcol) {
+    @include btn-color($col, $bgcol);
+    position: relative;
+    outline: none;
+    border: none;
+}
+
+@mixin section-style ($color, $bg-color) {
+    color: $color;
+    background-color: $bg-color;
+    -webkit-font-family: 'corporate_sregular';
+    font-family: 'corporate_sregular';
+}
+
+@mixin btn-style($border-radius) {
+    border-radius: $border-radius;
+    border: none;
+    font-size: $h3-font-size
+}
+
+@mixin btn-color($color, $bg-color) {
+    color: $color;
+    background-color: $bg-color;
+}

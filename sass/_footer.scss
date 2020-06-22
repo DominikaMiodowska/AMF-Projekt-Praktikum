@@ -1,0 +1,34 @@
+.footer {
+    width: 100%;
+    color: $white;
+
+    &-card {
+        padding: 2rem 0 2rem 0;
+
+        .heading {
+            font-size: $h3-font-size-sm;
+        }
+
+        p {
+            @include font-styles($h4-font-size, $line-height-M, 100);
+        }
+
+        .email-red {
+            color: $red;
+            font-size: $h2-font-size;
+        }
+
+        .input-text {
+            font-size: $h3-font-size-sm;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+        }
+    }
+
+    &-card:not(:last-child) {
+        @include media-breakpoint-down (md) {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        }
+    }
+}

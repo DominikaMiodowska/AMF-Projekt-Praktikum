@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="31px" viewBox="0 0 19 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Path</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-Copy-7" transform="translate(-65.000000, -1117.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Group-2" transform="translate(65.000000, 988.000000)">
+                <g id="chevron-up" transform="translate(9.500000, 144.500000) rotate(-90.000000) translate(-9.500000, -144.500000) translate(-6.000000, 135.000000)">
+                    <path d="M16.4572675,0.977414298 L29.6361967,14.1775533 C30.2718054,14.8141849 30.2718054,15.8463256 29.6361967,16.4828893 L28.0990856,18.0224742 C27.4645619,18.6580191 26.4361818,18.6592417 25.8001662,18.0251911 L15.3064177,7.56386545 L4.81273698,18.025259 C4.17672139,18.6593096 3.14834136,18.658087 2.51381766,18.0225421 L0.976706531,16.4829572 C0.341097823,15.8463256 0.341097823,14.8141849 0.976706531,14.1776212 L14.1556357,0.977482219 C14.7911766,0.340850581 15.8216588,0.340850581 16.4572675,0.977414298 Z" id="Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

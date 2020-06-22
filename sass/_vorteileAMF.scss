@@ -1,0 +1,54 @@
+.vorteileAMF {
+    h2 {
+        @include container-h2-styles($red);
+    }
+
+    &_text {
+        @include container-p-styles($primary);
+
+        @include media-breakpoint-down (xs) {
+            line-height: $line-height-M;
+        }
+    }
+
+    .list-group-item {
+        color: $primary;
+        font-size: $h5-font-size;
+        border: 2px solid $primary;
+        border-radius: 5px;
+    }
+
+
+    .list-group-item.active {
+        @include list-group-item($white, $primary);
+
+        &::after {
+            content: "";
+            position: absolute;
+            right: -14px;
+            top: 17px;
+            width: 0;
+            height: 0;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-left: 15px solid $primary;
+        }
+    }
+
+    &_table {
+        &-heading {
+            color: $primary;
+            @include font-styles($h2-font-size-sm, none, 400);
+
+            @include media-breakpoint-down (xs) {
+                @include mobile-font-style($h3-font-size, none)
+            }
+        }
+
+        &-text {
+            float: left;
+            line-height: $line-height;
+            overflow: auto;
+        }
+    }
+}

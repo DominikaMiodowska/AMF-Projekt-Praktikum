@@ -1,0 +1,50 @@
+// COLORS
+$primary: #0B1658;
+$secondary: #02003C;
+$red: #FF0200;
+
+$light: #9B99AE;
+$dark: #4F4F4F;
+
+
+// BOX SHADOW
+
+$shadow-light: 0 2rem 5rem rgba(0, 0, 0, .06);
+$shadow-base: 0 .1rem .5rem rgba(0, 0, 0, .5);
+$shadow-dark: 0 .5rem 1rem rgba(0, 0, 0, .3);
+
+
+// FONT SIZE
+$h2-font-size: 2.5rem;
+$h2-font-size-sm: 2rem;
+$h3-font-size: 1.8rem;
+$h3-font-size-sm: 1.6rem;
+$h4-font-size: 1.4rem;
+$h5-font-size: 1.2rem;
+$p-font-size: 1rem;
+
+
+// 	LINE HEIGHT
+$line-height-xs: 1.2rem;
+$line-height: 1.4rem;
+$line-height-M: 1.8rem;
+$line-height-L: 2rem;
+$line-height-XL: 2.5rem;
+
+
+// PADDING  -    MARGIN
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge((0: 0,
+        1: $spacer,
+        2: ($spacer * .25),
+        3: ($spacer * .5),
+        4: ($spacer * 1.5),
+        5: ($spacer * 1.8),
+        6: ($spacer * 2),
+        7: ($spacer * 3),
+        8: ($spacer * 4),
+        9: ($spacer * 5),
+        10: ($spacer * 6)),
+
+    $spacers);
