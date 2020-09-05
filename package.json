@@ -8,7 +8,7 @@
   "author": "Dominika",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^4.13.0"
+    "node-sass": "^4.13.1"
   },
   "dependencies": {
     "bootstrap": "^4.4.1"
